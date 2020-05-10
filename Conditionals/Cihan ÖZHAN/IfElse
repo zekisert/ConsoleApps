@@ -1,0 +1,110 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace If_Ornekler
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            #region If Ornekler
+
+            //if (true)
+            //{
+            //    Console.WriteLine("Doğru");
+            //}
+
+            //Console.ReadLine();
+
+            //bool isValid = false;
+            //if(isValid)
+            //{
+            //    Console.WriteLine("Doğru");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Yanlış");
+            //}
+
+            //int sayi1 = 8, sayi2 = 9, sonuc = 0;
+            //if (sayi1<sayi2)
+            //{
+            //    sayi1++;
+            //    sonuc = ++sayi1;
+            //    Console.WriteLine("Küçüktür");
+            //}
+            //else if(sayi1 == sayi2)
+            //{
+            //    Console.WriteLine("Bunlar eşit");
+            //}
+            //else
+            //{
+            //    sonuc = sayi1 + sayi2;
+            //    Console.WriteLine("Büyüktür");
+            //}
+            //Console.WriteLine("Sonuc : {0}",sonuc);
+
+            
+            byte ay = Convert.ToByte(Console.ReadLine());
+            if (ay == 1)
+            {
+                Console.WriteLine("Ocak");
+            }
+            else if(ay == 2)
+            {
+                Console.WriteLine("Şubat");
+            }
+            else if(ay == 3)
+            {
+                Console.WriteLine("Mart");
+            }
+            else if(ay == 4)
+            {
+                Console.WriteLine("Nisan");
+            }
+            else if(ay == 5)
+            {
+                Console.WriteLine("Mayıs");
+            }
+            else if(ay == 6)
+            {
+                Console.WriteLine("Haziran");
+            }
+            else if(ay == 7)
+            {
+                Console.WriteLine("Temmuz");
+            }
+            else if(ay == 8)
+            {
+                Console.WriteLine("Ağustos");
+            }
+            else if (ay == 9)
+            {
+                Console.WriteLine("Eylül");
+            }
+            else if(ay == 10)
+            {
+                Console.WriteLine("Ekim");
+            }
+            else if(ay == 11)
+            {
+                Console.WriteLine("Kasım");
+            }
+            else if(ay == 12)
+            {
+                Console.WriteLine("Aralık");
+            }
+            else
+            {
+                Console.WriteLine("1-12 arası sayı girmelisiniz!");
+            }
+
+            Console.ReadLine();
+
+            #endregion
+        }
+    }
+}
