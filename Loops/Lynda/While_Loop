@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace While_Loop
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var code = "";
+
+            while (code != "secret")
+            {
+                Console.WriteLine("What is the pass code?");
+                code = Console.ReadLine();
+
+                if (code == "secret")
+                {
+                    Console.WriteLine("Authenticated");
+                }
+                else if (code != "secret")
+                {
+                    Console.WriteLine("Not Authenticated");
+                }
+            }
+            Console.ReadLine();
+            
+        }
+    }
+}
