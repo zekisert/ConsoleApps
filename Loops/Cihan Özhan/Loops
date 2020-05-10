@@ -1,0 +1,143 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Loops
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            #region For Döngüsü
+            //for (int i = 0; i <=7 ; i++)
+            //{
+            //    Console.WriteLine("dijibil");
+            //}
+
+            //int sonuc = 0;
+            //for (int i = 1; i <= 7; i++)
+            //{
+            //    sonuc += i;
+            //}
+
+            //Console.WriteLine("Sonuç : " + sonuc);
+
+            //int[] dizi = new int[10];
+            //int i = 0, x = 0;
+            //for (; i < dizi.Length; )
+            //{
+            //    x = dizi.Length;
+            //    i++;
+            //}
+            //Console.WriteLine(x);
+            //Console.WriteLine(i);
+
+            //for (int i = 0; i <= 100 ; i++)
+            //{
+            //    if (i != 3)
+            //    {
+            //        Console.WriteLine("Değer : " + i);
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Hediye Kazandınız");
+            //    }
+            //}
+
+            //for (int i = 20; i >= 0; i--)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            //int bolunebilen = 0, bolunemeyen = 0;
+            //for (int i = 1; i <= 100; i++)
+            //{
+            //    if (i % 5 == 0)
+            //    {
+            //        Console.WriteLine("-> Beşe Bölünebilen : " + i);
+            //        bolunebilen++;
+            //    }
+            //    else if (i % 5 != 0)
+            //    {
+            //        Console.WriteLine("-> Beşe Bölünemeyen : " + i);
+            //        bolunemeyen++;
+            //    }
+
+            //}
+
+            //Console.WriteLine("Bölünebilen sayı toplamı : " + bolunebilen);
+            //Console.WriteLine("Bölünemeyen sayı toplamı : " + bolunemeyen);
+
+
+            //Console.Write("Sayı : ");
+            //int sayi = Convert.ToInt32(Console.ReadLine());
+
+            //Console.Write("Kaça : ");
+            //int kacaBol = Convert.ToInt32(Console.ReadLine());
+
+            //int bolunebilen = 0, bolunemeyen = 0;
+            //for (int i = 1; i <= sayi; i++)
+            //{
+            //    if (i % kacaBol == 0)
+            //    {
+            //        Console.WriteLine("-> Bölünebilen : " + i);
+            //        bolunebilen++;
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("-> Bölünemeyen : " + i);
+            //        bolunemeyen++;
+            //    }
+            //}
+
+            //Console.WriteLine(Environment.NewLine);
+            //Console.WriteLine("************************");
+            //Console.WriteLine(Environment.NewLine);
+            //Console.WriteLine(bolunebilen + " adet BÖLÜNEBİLEN sayı bulundu.");
+            //Console.WriteLine(bolunemeyen + " adet BÖLÜNEMEYEN sayı bulundu.");
+
+            #endregion
+
+            #region While Döngüsü
+            //while (true)
+            //    Console.WriteLine("Deep I/O");
+
+            //int i = 0;
+            //while (i <= 7)
+            //{
+            //    Console.WriteLine("Deep I/O : " + i);
+            //    i++;
+            //} 
+            #endregion
+
+            #region Do While Döngüsü
+            //do
+            //{
+            //    Console.WriteLine("Deep I/O");
+            //}
+            //while (false);
+
+            //string str;
+            //int counter = 0, length = 0;
+            //do
+            //{
+            //    Console.Write("Şifre : ");
+            //    str = Console.ReadLine();
+            //    length = str.Length;
+            //    counter++;
+            //}
+            //while (str != "12345");
+            //Console.WriteLine();
+            //Console.WriteLine("Deneme Sayısı : " + counter);
+            //Console.WriteLine("Şifre Uzunluk : " + length);
+            //Console.WriteLine("Döngüden Çıkıldı"); 
+            #endregion
+
+
+
+            Console.ReadLine();
+        }
+    }
+}
