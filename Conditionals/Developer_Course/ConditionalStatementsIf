@@ -1,0 +1,50 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _10_ConditionalStatementsIf
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //int x = 7;
+            //int y = 5;
+
+            //if (x > y)
+            //{
+            //    Console.WriteLine("Number one is greather than number two");
+            //}
+            //else if (x < y)
+            //{
+            //    Console.WriteLine("Number one is less than number two");
+            //}
+            //else if (x == y)
+            //{
+            //    Console.WriteLine("They matches!!");
+            //}
+
+            int x = 5;
+            int y = 7;
+
+            x = int.Parse(Console.ReadLine());
+            y = int.Parse(Console.ReadLine());
+
+            if (x > y)
+            {
+                Console.WriteLine("Number one is greather than number two");
+            }
+            else if (x < y)
+            {
+                Console.WriteLine("Number one is less than number two");
+            }
+            else
+            {
+                Console.WriteLine("They matches!!");
+            }
+            Console.ReadLine();
+        }
+    }
+}
