@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace _07_01_ForDongusu
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        /*
+            Konu : For Döngüsünün Mantığını Anlamak
+            Name : 07_01_ForDöngüsü
+            Solution Name : 07_01_ForDöngüsü
+            Yapılacaklar
+            * Bir Form Uygulaması Açınız
+            * Form Dizaynı üzerinde iken F7 tuşuna basarak kod penceresine geçiniz.
+            * Form üzerinde iken F4 komutu ile Properties Penceresini açınız.
+            * Şimşeğe benzeyen Events ikonuna tıklayınız.
+            * Açılan olaylar listesinden Load olayına çift tıklayınız.
+        */
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                MessageBox.Show(i + " . mesaj");
+                if (i == 5) break;
+            }
+        }
+    }
+}
