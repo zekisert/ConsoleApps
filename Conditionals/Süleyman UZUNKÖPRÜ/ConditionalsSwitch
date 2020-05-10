@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConditionalsSwitch
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string kontrolEt = string.Empty;
+            switch (kontrolEt)
+            {
+                case "Buna eşit ise":
+                    Console.WriteLine("Bunu Yap");
+                    break;
+                case "Şuna Eğit ise":
+                    Console.WriteLine("Şunu Yap");
+                    break;
+                default:
+                    break;
+            }
+            Console.ReadLine();
+
+        }
+    }
+}
