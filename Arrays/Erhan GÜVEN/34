@@ -1,0 +1,56 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Arrays_
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int sayi1 = 55;
+            int sayi2 = 45;
+            int sayi3 = 85;
+
+            //1.Kullanım
+            int[] sayilar = new int[3];
+            //2.Kullanım
+            int[] sayilar1;
+            sayilar1 = new int[3];
+            //3.Kullanım
+            int[] sayılar3 = new int[] { 55, 45, 85 };
+            //4.Kullanım
+            int[] sayilar4 = new[] { 55, 45, 85 };
+            //5. Kullanım
+            int[] sayilar5 = { 55, 45, 85 };
+            //6. Kullanım
+            int[] sayilar6;
+            sayilar1 = new int[] { 55, 45, 85 };
+
+            //1. ve 2. Kullanımda Değer Atama
+            sayilar[0] = 55;
+            sayilar[1] = 45;
+            sayilar[2] = 85;
+
+            //double tipinde tanımlama
+            double[] ondalikliDizi = { 3.5, 8.2, 3.7 };
+            
+            //string tipinde tanımlama
+            string[] cicekler = { "Papatya", "Begonya", "Açelya", "Çoban Püskülü" };
+            
+            Console.WriteLine(cicekler[3]);
+
+            //char tipinde tanımlama
+            char[] sesliHarfler = { 'a', 'e', 'ı', 'i', 'o', 'ö', 'u', 'ü' };
+
+            //1.Kullanım
+            int[,] cokBoyutluDizi = new int[5, 4];
+            //2.Kullanım
+            int[,] 
+            Console.ReadLine();
+
+        }
+    }
+}
