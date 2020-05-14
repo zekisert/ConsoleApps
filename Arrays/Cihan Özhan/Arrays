@@ -1,0 +1,185 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace Arrays
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            #region Dizi Tanımlama
+            //int[] dizi = new int[25];
+            //bool[] dizi1 = new bool[10];
+            //int[] dizi2;
+            //dizi2 = new int[20];
+
+            #endregion
+
+            #region Dizi Değer Atama
+            //int[] strDizi = new int[3];
+            //strDizi[0] = 5;
+            //strDizi[1] = 7;
+            //strDizi[2] = 9;
+            //Console.WriteLine("Değer : " + strDizi[2]); 
+            #endregion
+
+            #region String Dizi Oluşturma
+            //string[] sDizi = new string[5];
+            //sDizi[0] = "C";
+            //sDizi[1] = "i";
+            //sDizi[2] = "h";
+            //sDizi[3] = "a";
+            //sDizi[4] = "n"; 
+            #endregion
+
+            #region Diziyi Oluştururken Değer Atama
+            //float[] fdizi = new float[3];
+            //float[] fdizi = { 1.3F, 3.2f };
+            //string[] fString = { "mustafa", "asel", "bak" };
+            //string[] fString2 = new string[] { "ali", "ata", "bak" };
+            //int[] iDizi = new int[] { 3,2,34,2,23,442,223};
+            //int[] iDizi2 = { 3, 2, 34, 2, 23, 442, 223 }; 
+            #endregion
+
+            #region Dizi ve Döngü Örnek 1
+            //string[] fString = { "ali", "ata", "bak" };
+
+            //for (int i = 0; i < fString.Length; i++)
+            //{
+            //    Console.WriteLine(fString[i]);
+            //} 
+            #endregion
+
+            #region Char String Dizi Örneği
+            //string akademi = "dijibil";
+
+            //for (int i = 0; i < akademi.Length; i++)
+            //{
+            //    Console.WriteLine(akademi[i]);
+            //}
+            #endregion
+
+            #region Dizi Tanımlama Instance Önemi
+            //int[] d1, d2, d3;
+            //int[] d1 = new int[4], d2 = new int[3], d3 = new int[10];
+            //d1[0] = 2; hatalı 
+            #endregion
+
+            #region İç İçe For Örneği
+            //string[] sehirler = new string[3];
+            //sehirler[0] = "İstanbul";
+            //sehirler[1] = "Ankara";
+            //sehirler[2] = "Adana";
+            //Console.WriteLine(sehirler[2]);
+
+            //for (int i = 0; i < sehirler.Length; i++)
+            //{
+            //    //Console.WriteLine(sehirler[i]);
+            //    for (int j = 0; j < sehirler[i].Length; j++)
+            //    {
+            //        Console.WriteLine(sehirler[i][j]);
+            //    }
+            //    Console.WriteLine("*****");
+            //}
+
+            //for (int i = 0; i < sehirler.Length; i++)
+            //{
+            //    if (sehirler[i] == "Ankara")
+            //    {
+            //        Console.WriteLine(sehirler[i] + " ili içerisinde dönülüyor.");
+            //        Thread.Sleep(2000);
+            //        for (int h = 0; h < sehirler[i].Length; h++)
+            //        {
+            //            if (h == 3)
+            //            {
+            //                Console.WriteLine("Aranan kan bulundu : " + sehirler[i][h]);
+            //            }
+            //        }
+            //    }
+            //} 
+            #endregion
+
+            #region Dinamik Dizi
+            //Console.Write("Eleman Sayısı : ");
+            //int sayi = Convert.ToInt32(Console.ReadLine());
+            //int[] dizi = new int[sayi];
+
+            //for (int i = 0; i < dizi.Length; i++)
+            //{
+            //    Console.WriteLine(dizi[i]);
+            //} 
+            #endregion
+
+            #region Ödev
+            //int[] values = new int[3];
+            //values[0] = 5;
+            //values[1] = values[0] * 2;
+            //values[2] = values[1] * 2;
+            //Console.WriteLine(values[2]);
+
+            //int[] values = new int[3];
+            //values[0] = 5;
+            //for (int i = 0; i < values.Length; i++)
+            //{
+            //    values[i] = values[i - 1] * 2;
+            //}
+
+            //Console.WriteLine(values[2]); 
+            #endregion
+
+            #region İki Boyutlu Diziler
+            //int[,] ikiboyut =
+            //{
+            //    { 1,2},
+            //    { 3,4},
+            //    { 5,6},
+            //    { 7,8}
+            //};
+
+            //for (int i = 0; i < 4; i++)
+            //{
+            //    for (int j = 0; j < 2; j++)
+            //    {
+            //        Console.WriteLine(ikiboyut[i,j]);
+            //    }
+            //} 
+            #endregion
+
+
+            //int[,,] ucBoyut = new int[4, 2,2];
+
+            int[,,] ucBoyut =
+            {
+                { {1,2 },{3,4 } },
+                { {5,6 },{7,8 } },
+                { {9,10 },{11,12 } },
+                { {13,14 },{15,16 } }
+            };
+
+            for (int i = 0; i < 4; i++)
+            {
+                for (int j = 0; j < 2; j++)
+                {
+                    for (int k = 0; k < 2; k++)
+                    {
+                        Console.WriteLine(ucBoyut[i, j, k]);
+                    }
+                }
+            }
+
+            Console.ReadLine();
+
+
+
+
+
+
+
+
+        }
+    }
+}
