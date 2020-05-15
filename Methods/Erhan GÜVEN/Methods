@@ -1,0 +1,129 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Metotlar
+{
+    class Program
+    {
+        static string[] kullanicilar = { "Zeki", "Mustafa", "Sema" };
+        static void Main(string[] args)
+        {
+
+
+            //Console.WriteLine("Kayıt Eklendi");
+            //Console.WriteLine("Kayıt Düzenlendi");
+            //Console.WriteLine("Kayıt Silindi");
+            //Ekle();
+            //Duzenle();
+            //Sil();
+            //Toplama(55, 27);
+            //Toplama(Convert.ToInt32(Console.ReadLine()), Convert.ToInt32(Console.ReadLine()),"Toplama ");
+
+            //Console.WriteLine(Cikarma(Convert.ToInt32(Console.ReadLine()), Convert.ToInt32(Console.ReadLine())));
+
+            //Console.WriteLine(IsimSoyleyenMetod("Zeki", "SERT", 1984));
+
+            //Console.WriteLine(ArrayToplami(new int[] {5,6,7,9}));
+
+            //Console.WriteLine(ArrayParamsToplam(5, 6, 7, 9, 44, 65, 25, 45, 42));
+            //Console.ReadLine();
+
+            //string kullanici = "Zeki";
+
+            //SistemeGiris(kullanici);
+            //KullaniciDegistir(ref kullanici);
+            //SistemeGiris(kullanici);
+
+            //KullaniciAra(1);
+            KullaniciAra("Mustafa");
+
+
+            Console.ReadLine();
+        }
+
+        //Erişim Belirteci + Dönüş Tipi + Metot İsmi
+        static void Ekle()
+        {
+            Console.WriteLine("Kayıt Eklendi");
+        }
+
+        static void Duzenle()
+        {
+            Console.WriteLine("Kayıt Düzenlendi");
+        }
+
+        static void Sil()
+        {
+            Console.WriteLine("Kayıt Silindi");
+        }
+
+        static void Toplama(int Sayi1,int Sayi2,string Islem)
+        {
+            Console.WriteLine($"{Sayi1+Sayi2} Yapılan İşlem={Islem}");
+        }
+
+        static int Cikarma(int sayi1,int sayi2)
+        {
+            return sayi1 - sayi2;
+        }
+
+        static string IsimSoyleyenMetod(string Ad,string Soyad,int DogumTarihi)
+        {
+            return $"{Ad} {Soyad} Doğum Yılınız={DogumTarihi}";
+        }
+
+        static int ArrayToplami(int[] sayilar)
+        {
+            int toplam = 0;
+            foreach (var sayi in sayilar)
+            {
+                toplam += sayi;
+            }
+            return toplam;
+        }
+
+        static int ArrayParamsToplam(params int[] sayilar)
+        {
+            int toplam = 0;
+            foreach (var sayi in sayilar)
+            {
+                toplam += sayi;
+            }
+            return toplam;
+        }
+
+        static void SistemeGiris(string kullaniciAdi)
+        {
+            Console.WriteLine(kullaniciAdi + " sisteme giriş yaptı.");
+        }
+
+        static void KullaniciDegistir(ref string kullaniciAdi)
+        {
+            Console.WriteLine("Kullanıcı Adınızı Girin.");
+            kullaniciAdi = Console.ReadLine();
+            Console.WriteLine(kullaniciAdi + " sisteme giriş yaptı.");
+
+        }
+
+        static void KullaniciAra(int index)
+        {
+            Console.WriteLine($"{kullanicilar[index]} kullanıcısının index numarası {index}");
+        }
+
+        static void KullaniciAra(string kullaniciAdi)
+        {
+            for (int i = 0; i < kullanicilar.Length; i++)
+            {
+                if (kullanicilar[i]==kullaniciAdi)
+                {
+                    Console.WriteLine($"{kullanicilar[i]} kullanıcısının index numarası {i}");
+                }
+            }
+        }
+
+           
+    }
+}
