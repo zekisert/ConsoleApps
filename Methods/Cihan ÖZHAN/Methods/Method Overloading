@@ -1,0 +1,75 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace MethodsOver
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //var sonuc = EnBuyuk(2, 3, 3, 5, 3, 658);
+            // Yaz(sonuc.ToString());
+
+            //Yaz(Rastgele().ToString());
+
+            KullaniciEkle("Cihan", "Özhan");
+
+
+
+            Beklet();
+            
+        }
+
+        static void KullaniciEkle(string ad, string soyad, bool aktifMi = true)
+        {
+            Yaz("Ad : " + ad + "\nSoyad : " + soyad + "\nAktif : " + aktifMi);
+        }
+
+        static int Rastgele()
+        {
+            Random rnd = new Random();
+            return rnd.Next(1000, int.MaxValue);
+        }
+
+        static void Yaz(string metin)
+        {
+            Console.WriteLine(metin);
+        }
+        static void Beklet()
+        {
+            Console.ReadLine();
+        }
+
+        static int EnBuyuk(int a, int b)
+        {
+            if (a > b)
+                return a;
+            return b;
+        }
+
+        static int EnBuyuk(int a, int b, int c)
+        {
+            return EnBuyuk(EnBuyuk(a, b), c);
+        }
+
+        static int EnBuyuk(params int[] sayilar )
+        {
+            int toplam = 0;
+            foreach (var sayi in sayilar)
+            {
+                toplam += sayi;
+            }
+            return toplam;
+        }
+
+        static double Topla(double sayi1,double sayi2)
+        {
+            return sayi1 + sayi2;
+        }
+
+
+    }
+}
