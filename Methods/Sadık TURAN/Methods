@@ -1,0 +1,51 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Methods_St
+{
+    class Program
+    {
+        class Person
+        {
+            public string Name { get; set; }
+            public int Year { get; set; }
+
+            //public void Intro()
+            //{
+            //    Console.WriteLine($"name: {this.Name} age: {2020 - this.Year}");
+            //}
+
+            public void Intro()
+            {
+                Console.WriteLine($"name: {this.Name} age: {this.CalculateAge()}");
+            }
+
+            public int CalculateAge()
+            {
+                return DateTime.Now.Year - this.Year;
+            }
+
+        }
+
+
+        static void Main(string[] args)
+        {
+            var p1 = new Person() { Name = "Zeki", Year = 1984 };
+            var p2 = new Person() { Name = "Mustafa", Year = 2010 };
+            var p3 = new Person() { Name = "Sema", Year = 1987 };
+
+            //Console.WriteLine($"name: {p1.Name} age: {2020 - p1.Year}");
+            //Console.WriteLine($"name: {p2.Name} age: {2020 - p2.Year}");
+            //Console.WriteLine($"name: {p3.Name} age: {2020 - p3.Year}");
+
+            p1.Intro();
+            p2.Intro();
+            p3.Intro();
+            Console.ReadLine();
+
+        }
+    }
+}
