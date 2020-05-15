@@ -1,0 +1,96 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Methods
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //int result = Topla(5, 4);
+            //Yaz(result.ToString());
+            //Yaz("Merhaba!");
+            //Bosluk();
+            //Yaz("Merhaba!");
+
+            //Yaz("Merhaba!");
+            //Bosluk(5);
+            //Yaz("Merhaba!");
+
+            //var sonuc = GetAccountName(50);
+            //Yaz(sonuc);
+
+            var sonuc = IsValid("cihan.ozhan@hotmail.com");
+            Yaz(sonuc.ToString());
+            Beklet();
+            
+        }
+
+
+        static int Topla(int Sayi1,int Sayi2)
+        {
+            int sonuc = Sayi1 + Sayi2;
+            return sonuc;
+        }
+
+        //static void Bosluk()
+        //{
+        //    Console.WriteLine(Environment.NewLine);
+        //}
+
+          static void Bosluk(int bosSatirSayisi)
+        {
+            for (int i = 0; i < bosSatirSayisi; i++)
+            {
+                Console.WriteLine();
+            }
+        }
+
+
+        static void Yaz(string metin)
+        {
+            Console.WriteLine(metin);
+        }
+
+        static void Beklet()
+        {
+            Console.ReadLine();
+        }
+
+        static bool IsValid(string email)
+        {
+            bool isValid = default(bool);
+            if (email.Contains("@"))
+            {
+                isValid = true;
+            }
+            return isValid;
+        }
+
+
+
+        static string GetAccountName(int accountID)
+        {
+            string accountName = string.Empty;
+            switch (accountID)
+            {
+                case 1:
+                    accountName = "Zeki";
+                    break;
+                case 2:
+                    accountName = "Süleyman";
+                    break;
+                case 5:
+                    accountName = "Sertaç";
+                    break;
+                default:
+                    accountName = "Bilinmiyor";
+                    break;
+            }
+            return accountName;
+        }
+    }
+}
