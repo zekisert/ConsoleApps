@@ -1,0 +1,55 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Method_Parameter
+{
+    class Program
+    {
+        class Islem
+        {
+            //public int X { get; set; }
+            //public int Y { get; set; }
+
+            //public int Toplama(int x,int y,int z)
+            //{
+            //    Console.WriteLine("x " + x);
+            //    Console.WriteLine("y " + y);
+            //    Console.WriteLine("z " + z);
+            //    return x + y + z;
+            //}
+
+            public int Toplama(params int[] sayilar)
+            {
+                int toplam = 0;
+                foreach (var sayi in sayilar)
+                {
+                    toplam += sayi;
+                }
+                return toplam;
+            }
+
+
+        }
+
+
+        static void Main(string[] args)
+        {
+            var islem = new Islem();
+            //islem.X = 10;
+            //islem.Y = 20;
+
+            //Console.WriteLine(islem.Toplama(10,20,30));
+
+            Console.WriteLine(islem.Toplama(10));
+            Console.WriteLine(islem.Toplama(10, 20));
+            Console.WriteLine(islem.Toplama(10, 20, 30));
+            Console.WriteLine(islem.Toplama(10, 20, 30, 40));
+
+            Console.ReadLine();
+
+        }
+    }
+}
