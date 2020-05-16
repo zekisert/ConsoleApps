@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Methods_Overloading
+{
+    class Program
+    {
+        class Islem
+        {
+            public int Toplama(int a,int b)
+            {
+                return a + b;
+            }
+
+            public int Toplama(int a,int b,int c)
+            {
+                return a + b + c;
+            }
+
+            public int Toplama(int a,int b,int c,int d)
+            {
+                return a + b + c + d;
+            }
+        }
+
+
+        static void Main(string[] args)
+        {
+            var islem = new Islem();
+            Console.WriteLine(islem.Toplama(10, 20));
+            Console.WriteLine(islem.Toplama(10, 20, 30));
+            Console.WriteLine(islem.Toplama(10, 20, 30, 40));
+            Console.ReadLine();
+        }
+    }
+}
