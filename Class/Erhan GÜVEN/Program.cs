@@ -38,6 +38,7 @@ namespace Siniflar
             statikyapilar.StatikOlmayanIslemYap();
             StaticYapilar.StatikOlanIslemYap();
        */
+            Hesaplar hesap = new Hesaplar();
 
             Console.ReadLine();
         }
