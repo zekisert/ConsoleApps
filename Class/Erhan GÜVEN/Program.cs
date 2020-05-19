@@ -39,6 +39,12 @@ namespace Siniflar
             StaticYapilar.StatikOlanIslemYap();
        */
             Hesaplar hesap = new Hesaplar();
+            
+             /*    
+            Ozellikler ozellik = new Ozellikler();
+            ozellik.Sayi = 3;
+            Console.WriteLine(ozellik.Sayi);
+            */
 
             Console.ReadLine();
         }
