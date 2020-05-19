@@ -8,6 +8,11 @@ namespace Siniflar
 {
     public class Hesaplar
     {
+        public Hesaplar(int sayi,string isim)
+        {
+            Console.WriteLine($"{sayi} {isim}  Constructor Metodu Çalıştırıldı.");
+        }
+        
         public void HesapEkle(string MusteriAdi, int hesapNo)
         {
             Console.WriteLine($"{MusteriAdi} adlı müşterinin {hesapNo} hesabı eklendi.");
