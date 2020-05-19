@@ -17,7 +17,7 @@ namespace Siniflar
             Hesaplar hesap = new Hesaplar();
             hesap.HesapEkle("Erhan", 500);
             
-            /*
+       /*
             //Değer Tip Ataması
             int a = 50;
             int b = a;
@@ -31,7 +31,13 @@ namespace Siniflar
             musteri2.MusteriIsmi = "Erhan";
             Console.WriteLine(muster1.MusteriIsmi);
             Console.WriteLine(musteri2.MusteriIsmi);
-            */
+       */
+            
+       /*
+            StaticYapilar statikyapilar = new StaticYapilar();
+            statikyapilar.StatikOlmayanIslemYap();
+            StaticYapilar.StatikOlanIslemYap();
+       */
 
             Console.ReadLine();
         }
