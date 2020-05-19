@@ -16,6 +16,22 @@ namespace Siniflar
 
             Hesaplar hesap = new Hesaplar();
             hesap.HesapEkle("Erhan", 500);
+            
+            /*
+            //Değer Tip Ataması
+            int a = 50;
+            int b = a;
+            b = 30;
+            Console.WriteLine(a);
+            Console.WriteLine(b);
+
+            //Referans Tip Ataması
+            Musteriler muster1 = new Musteriler();
+            Musteriler musteri2 = muster1;
+            musteri2.MusteriIsmi = "Erhan";
+            Console.WriteLine(muster1.MusteriIsmi);
+            Console.WriteLine(musteri2.MusteriIsmi);
+            */
 
             Console.ReadLine();
         }
