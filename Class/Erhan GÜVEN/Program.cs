@@ -62,19 +62,33 @@ namespace Siniflar
             hesap2.HesapEkle();
             */
 
+            /*
+            Yapilar yapi = new Yapilar();
+            yapi.Sayi = 20;
+            BenimYapim benimYapim = new BenimYapim();
+            benimYapim.Sayi = 0;
 
+            BenimYapim benimYapim1 = new BenimYapim();
+            BenimYapim benimYapim2 = new BenimYapim();
+            benimYapim1.Sayi = 35;
+            benimYapim2 = benimYapim1;
+            benimYapim2.Sayi = 50;
+            Console.WriteLine(benimYapim1.Sayi);
+            Console.WriteLine(benimYapim2.Sayi);
+            */
 
+            /*
+            Console.WriteLine(Cariler.ALICI);
 
+            EnumYapisi yapi = new EnumYapisi();
+            yapi.KayitEkle(Cariler.PERSONEL);
+            */
 
-
+            OtoparkUygulamasi uygulama = new OtoparkUygulamasi();
+            uygulama.Calistir();
+           
             Console.ReadLine();
         }
-
-
     }
-
-
-
-
 }
 
